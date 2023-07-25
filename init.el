@@ -3,6 +3,8 @@
 (let ((user-dir (expand-file-name "user" user-emacs-directory)))
   (add-to-list 'load-path user-dir))
 
+(load "_required-dependencies-check")
+
 ;; Core
 (load "_package-management") ;; install package manager + use-package
 (load "_keybindings") ;; keybindings needs to be loaded before all packages that define keybindings
@@ -19,7 +21,10 @@
 (load "_projectile")
 (load "_helpful")
 
-;; Lsp & Language Support
+;; Lsp & Language & Debugging Support
+(load "_lsp-mode")
+(load "_lsp-ui")
+(load "_dap-mode")
 
 ;; Git & File Management
 (load "_magit")
