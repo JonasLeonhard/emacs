@@ -22,6 +22,7 @@
 (load "_helpful")
 
 ;; Lsp & Language & Debugging Support
+(load "_treesitter")
 (load "_lsp-mode")
 (load "_lsp-ui")
 (load "_dap-mode")
