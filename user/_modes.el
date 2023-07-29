@@ -6,5 +6,7 @@
 (use-package svelte-mode)
 (use-package rust-mode)
 (use-package twig-mode)
-(use-package typescript-mode)
+(use-package typescript-mode
+            :hook (typescript-mode . lsp-deferred)
+            :config (setq typescript-indent-level 2))
 
