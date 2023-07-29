@@ -38,6 +38,7 @@
 ;;           (mapcar #'car treesit-language-source-alist))))
 
 ;; prompt to install language grammars if not installed
+
 ;; (use-package treesit-auto
 ;;     :hook (after-init . global-treesit-auto-mode)
 ;;     :init (setq treesit-auto-install 'prompt))
@@ -47,8 +48,8 @@
 (use-package tree-sitter
   :hook
   ((css-mode
+    scss-mode
     js-mode
-    json-mode
     php-mode
     rust-mode
     sh-mode
