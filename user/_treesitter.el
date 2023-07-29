@@ -37,6 +37,11 @@
 ;;             (princ (format "%s: %s\n" language (treesit-language-available-p language))))
 ;;           (mapcar #'car treesit-language-source-alist))))
 
+;; prompt to install language grammars if not installed
+;; (use-package treesit-auto
+;;     :hook (after-init . global-treesit-auto-mode)
+;;     :init (setq treesit-auto-install 'prompt))
+
 ;; currently the builtin treesitter mode in emacs 29 does not highlight stuff correctly when going into js-ts-mode.
 ;; TODO: how to get the builtin treesitter mode to work correctly?
 (use-package tree-sitter
