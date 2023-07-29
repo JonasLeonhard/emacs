@@ -22,7 +22,7 @@
 (load "_helpful")
 
 ;; Lsp & Language & Debugging Support
-(load "_mode-mappings") ;; extend wich files to load wich mode in
+(load "_modes") ;; extend wich files to load wich mode in
 (load "_treesitter") ;; wich mode to load wich treesitter syntax in
 (load "_lsp-mode")
 (load "_lsp-ui")
